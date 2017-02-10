@@ -2,7 +2,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     morgan = require('morgan')
     app = express(),
-    port = process.env.PORT || 8080;
+    port = process.env.PORT || 80;
 
 app.use(express.static(__dirname + '/public'));
 app.post('*', bodyParser.json(),
